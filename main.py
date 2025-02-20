@@ -292,9 +292,9 @@ entry_busqueda.bind("<KeyRelease>", lambda event: mostrar_productos(entry_busque
 
 # TABLA DE PRODUCTOS
 lista_productos = ttk.Treeview(ventana, columns=("ID", "Nombre", "Cantidad", "Precio"), show="headings")
-lista_productos.heading("ID", text="ID")
+lista_productos.heading("ID", text="ID Producto")
 lista_productos.heading("Nombre", text="Nombre")
-lista_productos.heading("Cantidad", text="Cantidad")
+lista_productos.heading("Cantidad", text="Cantidad en Stock")
 lista_productos.heading("Precio", text="Precio")
 lista_productos.pack(pady=10, fill=BOTH, expand=True)
 
